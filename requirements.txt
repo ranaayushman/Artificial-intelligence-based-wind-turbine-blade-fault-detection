@@ -1,37 +1,51 @@
-# pip install -r requirements.txt
+# ==========================================
+# Core ML & YOLO
+# ==========================================
+ultralytics>=8.3.0
+torch>=2.8.0
+torchvision>=0.23.0
+torchaudio>=2.8.0
 
-# Base ----------------------------------------
-matplotlib>=3.2.2
-numpy>=1.18.5
-opencv-python>=4.1.2
-PyYAML>=5.3.1
-requests>=2.23.0
-scipy>=1.4.1
-tqdm>=4.41.0
+# ==========================================
+# Scientific Computing
+# ==========================================
+numpy>=1.26.0
+scipy>=1.13.0
+pandas>=2.2.0
+matplotlib>=3.9.0
+seaborn>=0.13.2
 
-# Logging -------------------------------------
-tensorboard>=2.4.1
-# wandb
+# ==========================================
+# Computer Vision
+# ==========================================
+opencv-python>=4.11.0
+Pillow>=11.0.0
 
-# Plotting ------------------------------------
-pandas>=1.1.4
-seaborn>=0.11.0
+# ==========================================
+# Utilities
+# ==========================================
+PyYAML>=6.0
+requests>=2.32.0
+tqdm>=4.67.0
 
-# Export --------------------------------------
-# coremltools>=4.1  # CoreML export
-# onnx>=1.9.0  # ONNX export
-# onnx-simplifier>=0.3.6  # ONNX simplifier
-# scikit-learn==0.19.2  # CoreML quantization
-# tensorflow>=2.4.1  # TFLite export
-# tensorflowjs>=3.9.0  # TF.js export
+# ==========================================
+# Logging & Monitoring
+# ==========================================
+tensorboard>=2.19.0
+nvitop>=1.5.0
 
-# Extras --------------------------------------
-# albumentations>=1.0.3
-# Cython  # for pycocotools https://github.com/cocodataset/cocoapi/issues/172
-# pycocotools>=2.0  # COCO mAP
-# roboflow
-# thop  # FLOPs computation
-pyqt5
-flatbuffers
-Pillow==8.4.0
-nvitop
+# ==========================================
+# GUI (Optional)
+# ==========================================
+PyQt5>=5.15.11
+
+# ==========================================
+# Serialization
+# ==========================================
+flatbuffers>=25.2.10
+
+# ==========================================
+# Jupyter (Optional)
+# ==========================================
+ipykernel>=6.29.5
+jupyter>=1.1.1
