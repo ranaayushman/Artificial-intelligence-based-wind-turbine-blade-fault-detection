@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List
 
 from pydantic import BaseModel
 
@@ -22,9 +22,16 @@ class Summary(BaseModel):
     dirt: int
 
 
+class Report(BaseModel):
+    overall_condition: str
+    risk_level: str
+    inspection_summary: str
+    maintenance_recommendations: List[str]
+
+
 class PredictionResponse(BaseModel):
     success: bool
     image: ImageResponse
     summary: Summary
     detections: List[Detection]
-    report: Optional[dict] = None
+    report: Report
